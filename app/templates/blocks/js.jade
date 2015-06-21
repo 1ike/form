@@ -1,7 +1,12 @@
+if realPerson
+  - js = data.js[1]
+else
+  - js = data.js[0]
+
 .skills-range
   h2.skills-range__header Уровень владения JavaScript
   .skills-range__scale
-    .skills-range__pointer
+    .skills-range__pointer(class=js ? 'skills-range__pointer--' + js : '')
   p.skills-range__sign Не владею
   p.skills-range__sign Использую готовые решения
   p.skills-range__sign Использую готовые решения и умею их переделывать
