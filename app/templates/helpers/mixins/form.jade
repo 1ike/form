@@ -1,0 +1,9 @@
+mixin form(data, person)
+  each item in data
+    li.skills-form__item
+      label.skills-form__label
+        input(name="html", type="checkbox", value=item[0], checked= item[person] ? true : false )
+        span
+        =item[0]
+
+

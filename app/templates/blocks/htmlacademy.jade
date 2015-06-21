@@ -1,0 +1,16 @@
+if realPerson
+  - chek = data.htmlacademy[1]
+else
+  - chek = data.htmlacademy[0]
+
+form.htmlacademy
+  |Выпускник&nbsp;
+  a(href='http:\\htmlacademy.ru') htmlacademy.ru
+  label.htmlacademy__label
+    input(name="html", type="radio", value="yes", checked= chek ? true : false )
+    span
+    |Да
+  label.htmlacademy__label
+    input(name="html", type="radio", value="no", checked= chek ? false : true )
+    span
+    |Нет

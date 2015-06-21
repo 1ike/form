@@ -1,0 +1,7 @@
+mixin list(data, listName)
+  ul.pers-data-list(class=listName ? 'pers-data-list--' + listName : '')
+    each item in data
+      li.pers-data-list__item= item[0]
+        .pers-data-list__item-value(class=item[2] ? 'pers-data-list__item-value--' + item[2] : '')= item[1]
+
+

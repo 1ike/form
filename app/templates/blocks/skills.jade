@@ -1,0 +1,16 @@
+if realPerson
+  - person = 2
+else
+  - person = 1
+
+
+.skills
+  h2.skills__header Практические навыки
+  p.skills__text Отемтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+  form.skills-form()
+    ul.skills-form__list.skills-form__list--col-1
+      +form(data.skills[0], person)
+    ul.skills-form__list.skills-form__list--col-2
+      +form(data.skills[1], person)
+    ul.skills-form__list.skills-form__list--col-3
+      +form(data.skills[2], person)

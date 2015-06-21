@@ -1,0 +1,128 @@
+
+/*Stylus variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon_home_width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon_home = x y offset_x offset_y width height total_width total_height image_path;
+*/
+$html-circle_x = 635px;
+$html-circle_y = 299px;
+$html-circle_offset_x = -635px;
+$html-circle_offset_y = -299px;
+$html-circle_width = 28px;
+$html-circle_height = 28px;
+$html-circle_total_width = 1464px;
+$html-circle_total_height = 442px;
+$html-circle_image = '../images/sprite.png';
+$html-circle = 635px 299px -635px -299px 28px 28px 1464px 442px '../images/sprite.png';
+$html-dot_x = 635px;
+$html-dot_y = 335px;
+$html-dot_offset_x = -635px;
+$html-dot_offset_y = -335px;
+$html-dot_width = 28px;
+$html-dot_height = 28px;
+$html-dot_total_width = 1464px;
+$html-dot_total_height = 442px;
+$html-dot_image = '../images/sprite.png';
+$html-dot = 635px 335px -635px -335px 28px 28px 1464px 442px '../images/sprite.png';
+$pers-line-long_x = 0px;
+$pers-line-long_y = 0px;
+$pers-line-long_offset_x = 0px;
+$pers-line-long_offset_y = 0px;
+$pers-line-long_width = 697px;
+$pers-line-long_height = 291px;
+$pers-line-long_total_width = 1464px;
+$pers-line-long_total_height = 442px;
+$pers-line-long_image = '../images/sprite.png';
+$pers-line-long = 0px 0px 0px 0px 697px 291px 1464px 442px '../images/sprite.png';
+$pers-line_x = 0px;
+$pers-line_y = 299px;
+$pers-line_offset_x = 0px;
+$pers-line_offset_y = -299px;
+$pers-line_width = 627px;
+$pers-line_height = 143px;
+$pers-line_total_width = 1464px;
+$pers-line_total_height = 442px;
+$pers-line_image = '../images/sprite.png';
+$pers-line = 0px 299px 0px -299px 627px 143px 1464px 442px '../images/sprite.png';
+$range-pointer_x = 705px;
+$range-pointer_y = 34px;
+$range-pointer_offset_x = -705px;
+$range-pointer_offset_y = -34px;
+$range-pointer_width = 16px;
+$range-pointer_height = 14px;
+$range-pointer_total_width = 1464px;
+$range-pointer_total_height = 442px;
+$range-pointer_image = '../images/sprite.png';
+$range-pointer = 705px 34px -705px -34px 16px 14px 1464px 442px '../images/sprite.png';
+$range-scale_x = 705px;
+$range-scale_y = 0px;
+$range-scale_offset_x = -705px;
+$range-scale_offset_y = 0px;
+$range-scale_width = 759px;
+$range-scale_height = 26px;
+$range-scale_total_width = 1464px;
+$range-scale_total_height = 442px;
+$range-scale_image = '../images/sprite.png';
+$range-scale = 705px 0px -705px 0px 759px 26px 1464px 442px '../images/sprite.png';
+$skills-check_x = 671px;
+$skills-check_y = 299px;
+$skills-check_offset_x = -671px;
+$skills-check_offset_y = -299px;
+$skills-check_width = 24px;
+$skills-check_height = 28px;
+$skills-check_total_width = 1464px;
+$skills-check_total_height = 442px;
+$skills-check_image = '../images/sprite.png';
+$skills-check = 671px 299px -671px -299px 24px 28px 1464px 442px '../images/sprite.png';
+$skills-empty_x = 671px;
+$skills-empty_y = 335px;
+$skills-empty_offset_x = -671px;
+$skills-empty_offset_y = -335px;
+$skills-empty_width = 24px;
+$skills-empty_height = 28px;
+$skills-empty_total_width = 1464px;
+$skills-empty_total_height = 442px;
+$skills-empty_image = '../images/sprite.png';
+$skills-empty = 671px 335px -671px -335px 24px 28px 1464px 442px '../images/sprite.png';
+
+/* Если не закоментить - вызывает ошибку при сборке.
+   Ничего страшного, можно пережить и без миксинов, перебиться переменными.
+   К тому же все равно кое-где множественные фоны.
+
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  spriteWidth($icon_home)
+}
+
+.icon-email {
+  sprite($icon_email)
+}
+
+spriteWidth($sprite) {
+  width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+  height: $sprite[5];
+}
+
+spritePosition($sprite) {
+  background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sprite($sprite) {
+  spriteImage($sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}
+*/

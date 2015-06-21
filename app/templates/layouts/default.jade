@@ -1,0 +1,16 @@
+- var data =  getData('data')
+include ../helpers/variables
+include ../helpers/mixins
+
+doctype html
+html(lang='ru')
+	include ../blocks/head
+	body
+		.main
+			include ../blocks/header
+			block content
+
+
+- var pageScripts = ['common.min.js']
+		include ../blocks/scripts
+
